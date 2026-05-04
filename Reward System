@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preschool Reward System</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+text-align: center;
+color: #1f1f1f;
+background: linear-gradient(120deg, #fff4b8, #dff7ff, #ffe3f1, #e7ffd9);
+background-size: 300% 300%;
+animation: bgMove 8s ease infinite;
+}
+
+@keyframes bgMove {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+.decor-bg {
+position: fixed;
+inset: 0;
+z-index: -1;
+pointer-events: none;
+}
+
+.decor {
+position: absolute;
+opacity: 0.18;
+font-size: 55px;
+animation: floatDecor 8s ease-in-out infinite;
+}
+
+.decor:nth-child(1){ top:10%; left:5%;}
+.decor:nth-child(2){ top:20%; right:5%; animation-delay:.5s;}
+.decor:nth-child(3){ bottom:15%; left:10%; animation-delay:1s;}
+.decor:nth-child(4){ bottom:10%; right:15%; animation-delay:1.5s;}
+.decor:nth-child(5){ top:50%; left:40%; animation-delay:2s;}
+
+@keyframes floatDecor {
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+}
+
+.page {
+max-width: 750px;
+margin: auto;
+padding: 20px;
+}
+
+.card {
+background: rgba(255,255,255,0.95);
+border-radius: 30px;
+padding: 25px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+border: 4px solid #24a84a;
+}
+
+.logo {
+width: 200px;
+border-radius: 50%;
+margin-bottom: 10px;
+animation: floatLogo 3s infinite;
+}
+
+@keyframes floatLogo {
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-8px);}
+}
+
+h1 {
+font-size: 30px;
+color: #168a32;
+margin: 10px 0;
+}
+
+.subtitle {
+font-size: 18px;
+color: #444;
+margin-bottom: 15px;
+}
+
+.bundle-box {
+background: #fff7da;
+border: 3px dashed #ffad00;
+border-radius: 20px;
+padding: 12px;
+margin: 15px 0;
+font-weight: bold;
+}
+
+/* FEATURES */
+.features {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 10px;
+margin: 15px 0;
+}
+
+.feature {
+padding: 10px;
+border-radius: 15px;
+color: white;
+font-weight: bold;
+}
+
+.feature:nth-child(1){background:#24a84a;}
+.feature:nth-child(2){background:#ff8a00;}
+.feature:nth-child(3){background:#1e88e5;}
+.feature:nth-child(4){background:#e91e63;}
+
+/* ARROWS */
+.arrow-text {
+font-size: 22px;
+color: red;
+margin-top: 20px;
+animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+from{ text-shadow:0 0 5px red;}
+to{ text-shadow:0 0 15px red;}
+}
+
+.arrows {
+font-size: 40px;
+animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(10px);}
+}
+
+/* BUTTON */
+.btn {
+display: inline-block;
+margin-top: 10px;
+padding: 18px 30px;
+font-size: 22px;
+font-weight: bold;
+color: white;
+text-decoration: none;
+border-radius: 20px;
+background: linear-gradient(90deg,#ff3b30,#ff8a00,#24a84a);
+box-shadow: 0 8px 0 #a93700;
+animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.07);}
+}
+
+.note {
+margin-top: 15px;
+background:#e9f9ee;
+padding:12px;
+border-radius:15px;
+font-weight:bold;
+color:#13712a;
+}
+</style>
+</head>
+
+<body>
+
+<div class="decor-bg">
+<div class="decor">⭐</div>
+<div class="decor">🏆</div>
+<div class="decor">📘</div>
+<div class="decor">🎯</div>
+<div class="decor">🎨</div>
+</div>
+
+<div class="page">
+<div class="card">
+
+<img src="logo.png" class="logo">
+
+<h1>Preschool Reward System</h1>
+
+<p class="subtitle">
+Complete Learning & Reward System for Ages 2–5
+</p>
+
+<div class="bundle-box">
+✨ Build habits • Encourage learning • Make activities fun
+</div>
+
+<div class="features">
+<div class="feature">Reward Charts</div>
+<div class="feature">Daily Tasks</div>
+<div class="feature">Motivation System</div>
+<div class="feature">Printable PDF</div>
+</div>
+
+<div class="arrow-text">Click below to get your Reward System</div>
+<div class="arrows">⬇️⬇️⬇️</div>
+
+<a class="btn" href="https://www.etsy.com/listing/4498635090/preschool-reward-system-printable-33?ref=shop_home_feat_4&sr_prefetch=1&pf_from=shop_home&pro=1&dd=1&logging_key=8fa15dc3de73db808385c8ed9496d35fd7d72941%3A4498635090" target="_blank">
+🎯 Get Reward System on Etsy
+</a>
+
+<div class="note">
+Fun • Learn • Grow 🌈 Perfect for toddlers & preschoolers
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
